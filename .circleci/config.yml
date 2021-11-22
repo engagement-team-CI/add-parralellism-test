@@ -1,5 +1,5 @@
 # This config is equivalent to both the '.circleci/extended/orb-free.yml' and the base '.circleci/config.yml'
-version: 2.1
+version: 2
 
 jobs:
   test:
@@ -16,6 +16,7 @@ jobs:
           command: npm test
 
 workflows:
+  version: 2
   build-and-test:
     jobs:
       - test
